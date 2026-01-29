@@ -10,6 +10,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Manrope:wght@200..800&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <script src="https://kit.fontawesome.com/fc8ca9408b.js" crossorigin="anonymous"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -23,32 +24,50 @@
         }
     </script>
     <style>
-        
-.manrope-reguler {
-  font-family: "Manrope", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
+        .manrope-regular {
+            font-family: "Manrope";
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
     </style>
 </head>
 
-<body>
-<main>
-    <header>
-    <nav>
+<body class="manrope-regular">
+    <main class="max-w-screen-lg mx-auto px-16 lg:px-16">
+        <header class="mt-16 flex">
+            <div>
+                <h1 class="font-extrabold text-5xl leading-[1.2]">It's good <br>
+                    tea time at The <br> Tea House</h1>
+                <p class="mt-3 text-gray-500 w-3/4">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To
+                    Your
+                    Taste Buds.</p>
+                <button class="px-4 py-3 mt-6 rounded-lg text-white bg-gradient-to-r from-orange-500 to-red-500">Explore
+                    More <i class="fa-solid fa-arrow-right text-xl -rotate-45"></i></button>
+            </div>
+            <div class="relative">
+                <!-- banner image container -->
+                <div>
+                    <img class="w-auto" src="/images/banner.png" alt="">
+                </div>
+                <div class="flex absolute left-20 top-72 items-center gap-3 bg-white shadow-lg px-4 py-2 rounded-md">
+                    <div><i class="fa-solid fa-star text-orange-300 text-2xl"></i></div>
+                    <div>
+                        <h3 class="text-xl font-bold">5.0</h3>
+                        <p class="text-xs text-gray-400">Trust pilot Ratings</p>
+                    </div>
+                </div>
 
-    </nav>
-    
-    </header>
+            </div>
+        </header>
 
-    <section>
+        <section>
 
-    </section>
-</main>
-<footer>
+        </section>
+    </main>
+    <footer>
 
-</footer>
+    </footer>
 </body>
 
 </html>
